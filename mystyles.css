@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: gold;
+    background-color: darkred;
+    font-size: large;
+    font-style: normal;
+    padding: 0.5em;
+}
+
+h3 {
+    text-align: center;
+    color: gold;
+    background-color: maroon;
+    font-size: medium;
+    font-style: normal;
+    padding: 0.25em;
+}
+
+p {
+    text-align: left;
+    color:black;
+    font-size: medium;
+    font: italic;
+    
+}
+
+body {
+    background-color:beige;
+}
+
+nav {
+    color: black;
+    text-align: center;
+    font-size: large;
+    font: bold;
+    
+
+}
+
+footer {
+    text-align: center;
+    font-size: large;
+    width: 100%;
+    
+
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+caption {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.text {
+    color:blue;
+    font-style: italic;
+}
+
+.text2 {
+    color:chocolate;
+
+}
+
+.list {
+    font-style: bold;
+    color:darkgoldenrod;
+    text-indent: 1cm;
+}
