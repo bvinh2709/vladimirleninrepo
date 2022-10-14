@@ -9,6 +9,9 @@
         <link rel="shortcut icon" href="web1301/picture/favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="mystyles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
         <style>
             header {
               text-align: center;
@@ -31,14 +34,20 @@
             <h1>Vladimir Lenin Contact Site</h1>
         </header>
 
-        <nav>
+        <nav class="w3-bar" >
             <h2>Site Menu</h2>
+            <div class="w3-bar w3-light-grey">
             
-            <a href="index.html">Home</a> |
-            <a href="faq.html">FAQs</a> |
-            <a href="gallery.html">Gallery</a> |
-            <a href="contact-us.html">Contact Us</a>
-            
+              <a class="w3-button w3-bar-item w3-orange w3-hover-white w3-round-xlarge w3-middle"   href="index.html">Home<i class="w3-margin-left material-icons">home</i></a> 
+              <a class="w3-button w3-bar-item w3-blue w3-hover-white w3-round-xlarge w3-centered"   href="faq.html">FAQs<i class="w3-margin-left material-icons">search</i></a> 
+              <a class="w3-button w3-bar-item w3-red w3-hover-white w3-round-xlarge w3-centered"  href="gallery.html">Gallery<i class="w3-margin-left material-icons">photo</i></a> 
+              <a class="w3-button w3-bar-item w3-indigo w3-hover-white w3-round-xlarge w3-centered"   href="contact-us.html">Contact Us<i class="w3-margin-left material-icons">phone</i></a>
+              <a class="w3-button w3-bar-item w3-black w3-hover-white w3-round-xlarge w3-centered"   href="https://github.com/bvinh2709/vladimirleninrepo.git">Github<i class="w3-margin-left material-icons">hub</i></a> 
+              <input type="text" class="w3-bar-item w3-input" placeholder="Search..">
+              <a href="#" class="w3-bar-item w3-button w3-green">Go</a>
+              
+              
+            </div>
         </nav>
         
         <main>
@@ -50,20 +59,20 @@
                 <fieldset>
                     <legend>This is the email form.</legend>
                     <h3>Personal Information</h3>
-                    <form id="myMailerForm" method="post" action="mailto:vladimirlenin@dcccd.edu">
+                    <form class="w3-container w3-card-4 w3-pale-yellow" id="myMailerForm" method="post" action="mailto:vladimirlenin@dcccd.edu">
                       <p>
-                        <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
+                        <label title="Enter your full name.">Name <input class="w3-input w3-border w3-hover-light-gray" type="text"></label>
                       </p>
                       <p>
-                        <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
+                        <label title="Enter your email address.">E-Mail <input class="w3-input w3-border w3-hover-light-gray" type="text"></label>
                       </p>
                       <p>
-                        <label title="Enter your phone number.">Tel# <input type="text" name="phonenumber" placeholder="Telephone Number"></label>
+                        <label title="Enter your phone number.">Tel# <input class="w3-input w3-border w3-hover-light-gray" type="text"></label>
                       </p>
                       <h3>Contacting Purposes</h3>
                       <p>
                         <label title="Select your question.">Questions</label>
-                        <select name="questionID">
+                        <select name="questionID" class="w3-select w3-border w3-hover-light-gray">
                           <option value="">&larr;&nbsp;Select Question&nbsp;&rarr;</option>
                           <option value="1">Next Exhibition</option>
                           <option value="2">Visit Lenin's Tomb</option>
@@ -74,26 +83,26 @@
                       </p>
                       <h3>Contact Preference</h3>
                       <p>
-                        <label title="Select to be contacted."><input type="checkbox" name="email-me"> Email Me</label>
+                        <label title="Select to be contacted."><input class="w3-check" type="checkbox" name="email-me"> Email Me</label>
                       </p>
                       <p>
-                        <label title="Select to be contacted."><input type="checkbox" name="callt-me"> Call Me</label>
+                        <label title="Select to be contacted."><input class="w3-check w3-hover-light-gray" type="checkbox" name="callt-me"> Call Me</label>
                       </p>
                       <p>
-                        <label title="Select to be contacted."><input type="checkbox" name="text-me"> Text Me</label>
+                        <label title="Select to be contacted."><input class="w3-check w3-hover-light-gray" type="checkbox" name="text-me"> Text Me</label>
                       </p>
                       <h3>Message</h3>
                       <p>
-                        <label title="Select if you have a question.">Question <input type="radio" name="request"></label>
+                        <input class="w3-radio" type="radio" name="request" value="question"><label title="Select if you have a question.">Question</label>
                         <br>
-                        <label title="Select if you have a comment.">Comment <input type="radio" name="request"></label>
+                        <input class="w3-radio" type="radio" name="request" value="comment"><label title="Select if you have a comment.">Comment</label>
                       </p>
                       <p>
                         <label for="message">Message (Please be specific with your inquiries)</label><br>
                         <textarea id="message" name="message"></textarea>
                       </p>
-                      <input type="submit" name="submit" value="Send Mail">
-                      <input type="reset" name="reset" value="Reset">
+                      <input class="w3-button w3-indigo w3-hover-white w3-round-xlarge" type="submit" name="submit" value="Send Mail">
+                      <input class="w3-button w3-red w3-hover-white w3-round-xlarge" type="reset" name="reset" value="Reset">
                     </form>
                 </fieldset>
           
@@ -101,11 +110,11 @@
 
 
             <section>
-                <h2>Russia History 1301 - 77777 Fast Track</h2>
-                <table>
-                    <caption><strong>Schedule</strong></caption>
+                <h2 class="w3-container w3-teal">Russia History 1301 - 77777 Fast Track</h2>
+                <table class="w3-table w3-striped w3-border w3-bordered w3-hoverable w3-centered w3-table-all">
+                    <caption class="w3-teal"><strong>Schedule</strong></caption>
                     <thead>
-                        <tr>
+                        <tr class="w3-hover-yellow">
                             <th>Schedule</th>
                             <th scope="col" abbr="Column 1" id="col1">October</th>
                             <th scope="col" abbr="Column 2" id="col2">November</th>
@@ -113,31 +122,31 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="w3-hover-red">
                             <th scope="row">Class Meetings</th>
                             <td headers="col1">October 10</td>
                             <td headers="col2">November 11</td>
                             <td headers="col3">December 12</td>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-blue">
                             <th scope="row">Quiz</th>
                             <td headers="col1">October 11 - 13</td>
                             <td headers="col2">November 11 - 13</td>
                             <td headers="col3">December 11 - 13</td>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-yellow">
                             <th scope="row">Museum Tour</th>
                             <td headers="col1">October 15</td>
                             <td headers="col2">November 15</td>
                             <td headers="col3">December 15</td>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-red">
                             <th scope="row">Exam</th>
                             <td headers="col1">October 18</td>
                             <td headers="col2">November 18</td>
                             <td headers="col3">December 18</td>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-blue">
                             <th scope="row">Group Project</th>
                             <td headers="col1">October 15 - 20</td>
                             <td headers="col2">November 15 - 20</td>
@@ -145,6 +154,19 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="w3-panel w3-yellow w3-topbar w3-bottombar w3-border-red">
+                  <p>November 1x is Thanks Giving. No class on this day!</p>
+                </div>
+                <div>
+                  <ul class="w3-ul w3-border w3-pale-yellow">
+                    <li><h4>Things to do when going to a Museum Tour:</h4></li>
+                    <li>$5 Entrance Fee</li>
+                    <li>A notepad and a pen/pencil for note taking</li>
+                    <li>Do not bring food and drink into the museum</li>
+                    <li>Follow the group</li>
+                    <li>Enjoy Art!</li>
+                  </ul>
+                </div>
             </section>
             <Section>
                 <h2>Error Explanation</h2>
@@ -157,14 +179,14 @@
         
         
             <footer>
+            
             <nav>
-                <a href="#top">Back to Top</a>
-            </nav>
-            <nav>
-                <a href="https://www.dallascollege.edu/pages/default.aspx" rel="external"> Dallas College </a> |
-                <a href="mailto:vladimirlenin@dcccd.edu"> Mail Vladimir Lenin </a>
+                <a class="w3-button w3-blue w3-hover-white w3-round" href="#top">Back to Top</a> |
+                <a class="w3-button w3-blue w3-hover-white w3-round" href="https://www.dallascollege.edu/pages/default.aspx" rel="external"> Dallas College </a> |
+                <a class="w3-button w3-blue w3-hover-white w3-round" href="mailto:vladimirlenin@dcccd.edu"> Mail Vladimir Lenin </a> 
             </nav>
         </footer>
+        
         </main>
     </body>
 </html>
